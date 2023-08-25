@@ -1,0 +1,99 @@
+.main {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+
+  height: 100vh;
+  width: 100%;
+
+  color: white;
+  background-color: black;
+
+  padding: 0 10%;
+}
+
+@media only screen and (max-width: 660px) {
+  .main {
+    height: fit-content;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .main {
+    height: fit-content;
+    padding: 100px 10%;
+    padding-top: 50px;
+  }
+}
+
+.small_heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 1em;
+  font-family: "Daikon Medium";
+}
+
+.large_heading {
+  margin: 1em 0;
+  margin-top: 10px;
+  font-family: "Daikon Bold";
+  font-size: 2em;
+}
+
+.cards_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 30px;
+
+  padding: 10px 50px;
+}
+
+@media only screen and (max-width: 660px) {
+  .cards_container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr);
+    gap: 10px;
+
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .cards_container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr);
+    gap: 10px;
+
+    padding: 10px 0;
+  }
+}
+
+.card {
+  display: flex;
+  flex-flow: column;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 50px 20px;
+}
+
+.card_image {
+  position: relative;
+
+  height: 100px;
+  width: 100px;
+}
+
+.card_image path {
+  fill: white;
+  stroke: white;
+}
+
+.card h2 {
+  text-transform: uppercase;
+}

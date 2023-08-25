@@ -1,0 +1,60 @@
+.main {
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  z-index: 99;
+}
+
+.logo,
+.menu {
+  padding: 1em 2em;
+  color: #fff;
+}
+
+.logo {
+  font-family: "Daikon SemiBold";
+  font-size: 1.9em;
+  margin-right: auto;
+  font-weight:bolder; /* You can adjust the weight as needed */
+}
+
+.logoImage {
+  max-width: 40px; /* Adjust the width as needed */
+  margin-right: 10px; /* Adjust spacing between logo and text */
+}
+
+.logo span {
+  font-weight: bold; /* You can adjust the weight as needed */
+}
+
+.menu {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  font-family: "URW Geometric SemiBold";
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.menu_text {
+  position: relative;
+  width: 40px;
+  height: 100%;
+}
+
+.menu_text div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu_text span {
+  position: relative;
+}

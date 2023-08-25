@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Daikon Bold";
+  src: url(../cms/fonts/Daikon/Daikon-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Daikon SemiBold";
+  src: url(../cms/fonts/Daikon/Daikon-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Daikon Medium";
+  src: url(../cms/fonts/Daikon/Daikon-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Daikon Medium Italic";
+  src: url(../cms/fonts/Daikon/Daikon-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: "Daikon Light";
+  src: url(../cms/fonts/Daikon/Daikon-Light.ttf);
+}
+
+@font-face {
+  font-family: "Daikon Light Italic";
+  src: url(../cms/fonts/Daikon/Daikon-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: "URW Geometric SemiBold";
+  src: url(../cms/fonts/URW\ Geometric/URWGeometricSemiBold.otf);
+}
+
+@font-face {
+  font-family: "URW Geometric Bold";
+  src: url(../cms/fonts/URW\ Geometric/URWGeometricBold.otf);
+}
+
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+  --secondary-background-color: rgb(22, 22, 22);
+  --secondary-text-color: #313131;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 14px;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+[data-theme="light"] {
+  --background-color: #fff;
+  --text-color: #000;
+  --secondary-background-color: rgb(221, 221, 221);
+  --secondary-text-color: #313131;
+}
+[data-theme="dark"] {
+  --background-color: #000000;
+  --text-color: #fff;
+  --secondary-background-color: rgb(22, 22, 22);
+  --secondary-text-color: #d4d1d1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.active-thumb {
+  left: 0px;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}

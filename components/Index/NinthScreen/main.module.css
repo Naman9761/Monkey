@@ -1,0 +1,50 @@
+.main {
+  min-height: 100vh;
+  height: fit-content;
+
+  margin: 50px 0;
+}
+
+@media only screen and (max-width: 980px) {
+  .main {
+    min-height: fit-content;
+  }
+}
+
+.small_heading {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 10px;
+
+  font-family: "Daikon Medium";
+  font-size: 1em;
+}
+
+.large_heading {
+  font-family: "URW Geometric SemiBold";
+  font-size: 2.5em;
+  margin: 15px 0;
+}
+
+.headings {
+  position: relative;
+  margin-left: 10%;
+  margin-bottom: 25px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5px;
+
+  margin: 0 10%;
+}
+
+@media only screen and (max-width: 660px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
